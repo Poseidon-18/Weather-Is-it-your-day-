@@ -1,0 +1,50 @@
+<!Doctype HTML>
+<html lang ="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOURWEATHER</title>
+    <!-- linking to css wala part -->
+     <link rel="stylesheet" href="css/styling.css">
+    <link rel="stylesheet" href="css/responses.css">
+</head>
+<div class="container">
+        <header>
+            <h1>DASHBOARD</h1>
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name to check">
+                <button id="search-btn">Search</button>
+                <button id="location-btn">📍 My Location</button>
+            </div>
+        </header>
+        <main>
+            <div class="current-weather">
+                <div class="weather-info">
+                    <h2 id="city-name">--</h2>
+                    <p id="temperature">--°C</p>
+                    <p id="description">--</p>
+                    <p id="humidity">Humidity: --%</p>
+                    <p id="wind-speed">Wind Speed: -- km/h</p>
+                </div>
+                <div class="weather-icon">
+                    <img id="weather-icon" src="" alt="weather icon">
+                </div>
+            </div>
+
+            <div class="Upcoming Forecast">
+                <h3>5-Day Forecast</h3>
+                <div id="forecast-container" class="forecast-grid">
+                </div>
+            </div>
+        </main>
+
+        <div id="error-message" class="error"></div>
+    </div>
+
+    <!-- link to javascript files isse -->
+    <script src="js/secret.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
