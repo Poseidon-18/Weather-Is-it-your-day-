@@ -1,4 +1,4 @@
-// ========== js/app.js ==========
+
 
 async function loadWeather(city) {
     try {
@@ -59,6 +59,3 @@ document.getElementById('city-input').addEventListener('keypress', (e) => {
         }
     }
 });
-
-// Load default city on startup
-loadWeather('London');
