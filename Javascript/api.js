@@ -1,7 +1,7 @@
-const API_KEY = ''; 
+const API_KEY = typeof CONFIG_API_KEY !== 'undefined' ? CONFIG_API_KEY : '';
 const BASE_URL = 'https://api.weatherapi.com/v1';
 
-// Fetch current weather
+// Fetching current wala data
 async function fetchWeatherByCity(city) {
     try {
         const response = await fetch(
@@ -19,7 +19,6 @@ async function fetchWeatherByCity(city) {
     }
 }
 
-// Fetch 3-day forecast (free tier gives 3 days)
 async function fetchForecastByCity(city) {
     try {
         const response = await fetch(
@@ -37,7 +36,6 @@ async function fetchForecastByCity(city) {
     }
 }
 
-// Fetch weather by coordinates
 async function fetchWeatherByCoords(lat, lon) {
     try {
         const response = await fetch(
@@ -55,7 +53,6 @@ async function fetchWeatherByCoords(lat, lon) {
     }
 }
 
-// Fetch forecast by coordinates
 async function fetchForecastByCoords(lat, lon) {
     try {
         const response = await fetch(

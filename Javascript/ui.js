@@ -37,3 +37,18 @@ function updateForecast(data) {
         forecastContainer.appendChild(card);
     });
 }
+function showError(message) {
+    const errorDiv = document.getElementById('error-message');
+    errorDiv.textContent = message;
+    errorDiv.style.display = 'block';
+    setTimeout(() => {
+        errorDiv.style.display = 'none';
+    }, 4000);
+}
+
+function updateWeatherTheme(condition) {
+    const body = document.body;
+    body.className = ''; // clear existing
+    const category = getWeatherCategory(condition); // from utils.js
+    body.classList.add(category);
+}
