@@ -327,3 +327,22 @@ button:active {
         transform: rotate(360deg);
     }
 }
+.hero {
+    padding: 60px 20px 40px;
+    text-align: center;
+    animation: fadeInDown 0.8s ease;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.85;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
